@@ -18,6 +18,6 @@ if [[ $1 =~ ^-*h(elp)?$ ]]; then
 fi
 
 curl -s https://www.cloudflare.com/ips-v{4,6} \
-| sed 's/.*/ufw allow from & port 80,443 proto tcp comment CloudFlare/'
+| sed 's/.*/ufw allow from & to any port 80,443 proto tcp comment CloudFlare/'
 
 exit 0
