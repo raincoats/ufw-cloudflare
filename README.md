@@ -4,4 +4,4 @@ This script grabs all of CloudFlare's IP addresses and creates `ufw` rules to al
 
 # Usage
 
-It outputs ufw rules to stdout, pipe it to sh.
+Run the script by itself to automatically add the rules. Pass the flag `rm` to remove them, and the flag `test` to print the rules to stdout without adding them.
