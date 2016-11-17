@@ -13,7 +13,7 @@
 
 if [[ $1 =~ ^-*h(elp)?$ ]]; then
 	printf -- "%s: ufw rule generator for CloudFlare\n" $0
-	printf -- "usage: %s | sudo sh" $0
+	printf -- "usage: %s | sudo sh\n" $0
 	exit 0
 fi
 
